@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="chrono">
+        <span>Timer:</span>
+        <span class="time">10 s</span>
+      </div>
+
+      <div class="level">
+        <span>Niveau</span>
+        <input
+          type="range"
+          class="gameLevel"
+          min="1"
+          max="4"
+          step="1"
+          value="1"
+          oninput="document.getElementById('levelDisplay').value=this.value"
+        />
+        <input type="text" id="levelDisplay" value="1" readonly />
+      </div>
+
+      <div class="wordPropo">
+        <span style="font-size: 2rem">Saisir le mot: </span>
+        <span class="word" style="font-size: 2rem">Javascript</span>
+      </div>
+
+      <div class="wordInput">
+        <input type="text" placeholder="..." />
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
